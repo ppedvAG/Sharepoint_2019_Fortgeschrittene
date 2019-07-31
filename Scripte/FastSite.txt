@@ -1,0 +1,9 @@
+Measure-Command { $newSPSite = @{
+    Url                  = "http://hv-spoint2019et/sites/myfastsite1"
+    OwnerAlias           = "sp-training\Administrator"
+    CreateFromSiteMaster = $true
+    Name                 = "MyVeryFastSite"
+    Template             = "STS#0"
+    ContentDatabase      = "FS1_DB"
+}
+    New-SPSite @newSPSite }
